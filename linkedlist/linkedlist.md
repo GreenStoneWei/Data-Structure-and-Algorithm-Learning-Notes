@@ -1,0 +1,12 @@
+## Features
+- 單一方向
+- 由 node 組成，包含 "值" 與下一個 node 的 "ref"
+- "ref" 為 nil 則為 linked list 的尾端
+- 在 head 加入元素永遠是 O(1)，Array 則是 O(n)
+
+
+## Complexity
+
+行為|在最前面插入|在最後面插入|在指定位置插入|找指定位置
+--|--|--|--|--|
+複雜度|O(1)|O(1)|O(i)|O(i)
