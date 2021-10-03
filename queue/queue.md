@@ -64,6 +64,3 @@ space complexity|O(n)|O(n)
 
 - 與 RingBuffer 相比，dequeue 也可接近 O(1)，且長度不必固定
 - 與 linkedList 相比，空間使用有優勢，因為 array 使用相鄰的記憶體。也因此大量的元素被讀取的時候，可以在第一次存取時就被 cache 住（ iOS 課本，不確定 node 執行環境）（a linked list where the elements aren’t in contiguous blocks of memory）
-
-## Where to go from queue?
-- 

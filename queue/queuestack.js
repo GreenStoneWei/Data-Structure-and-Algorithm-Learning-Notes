@@ -18,7 +18,7 @@ class QueueStack {
 
   dequeue() {
     if (this.leftStack.length === 0) {
-      this.leftStack = this.rightStack.reverse()
+      this.leftStack = this.rightStack.reverse() // FIXME: need cloneDeep
       this.rightStack.length = 0 // flush all
     }
     return this.leftStack.shift()
