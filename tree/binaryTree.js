@@ -9,6 +9,39 @@ class BinaryNode {
   description() {
     return diagram(this)
   }
+
+  // unbalanced insert
+  insert(value) {
+    if (!this.value) {
+      this.value = value
+      return
+    }
+    _insert(this, value)
+  }
+
+  contains(value) {
+    return _contains(this, value)
+  }
+}
+
+function _insert(node, value) {
+  if (value < node.left) {
+    node.left = _insert(node.left, value)
+  } else {
+    node.right = _insert(node.right, value)
+  }
+}
+
+function _contains(node, value) {
+  if (node.value === value) {
+    return true
+  } else {
+    if (value < node.left) {
+      return _contains(node.left, value)
+    } else {
+      return _contains(node.right, value)
+    }
+  }
 }
 
 function diagram(node, top = '', root = '', btm = '') {
