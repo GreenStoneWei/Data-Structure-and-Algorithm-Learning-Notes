@@ -1,0 +1,22 @@
+{
+  "name": "data-structure-and-algorithm-learning-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreenStoneWei/Data-Structure-and-Algorithm-Learning-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreenStoneWei/Data-Structure-and-Algorithm-Learning-Notes/issues"
+  },
+  "homepage": "https://github.com/GreenStoneWei/Data-Structure-and-Algorithm-Learning-Notes#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}

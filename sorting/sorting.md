@@ -35,3 +35,7 @@
 2. much like merge sort but choosing a pivor and divides the array into three parts as [ elements < pivot | pivot | elements > pivot ]
 3. Lomuto’s and Hoare’s don't handle duplicates really well -> Dutch national flag partitioning
 4. Best O(n log n), worst (nearly sorted, bad pivot) could perform as O(n^2)
+
+### Discussion
+1. Merge sort is preferable over Quicksort when you need stability. Merge sort is stable and guarantees O(n log n). These characteristics are not the case with Quicksort, which isn’t stable and can perform as bad as O(n²).
+2. Merge sort works better for larger data structures or data structures where elements are scattered throughout memory. Quicksort works best when elements are stored in a contiguous block.

@@ -117,8 +117,8 @@ function quickSortMedian(array, low, high) {
 
 console.log(quickSortMedian(testArray, 0, testArray.length - 1))
 
-function _partitionDutchFlag(array, low, high) {
-  const pivot = array[pivotIndex] // FIXME: where pivotIndex come from
+function _partitionDutchFlag(array, low, high, pivotIndex) {
+  const pivot = array[pivotIndex]
   let smaller = low
   let equal = low
   let larger = high
@@ -140,7 +140,8 @@ function _partitionDutchFlag(array, low, high) {
 
 function quickSortDutchFlag(array, low, high) {
   if (low < high) {
-    let [middleFirst, middleLast] = _partitionDutchFlag(array, low, high)
+    const pivotIndex = random(low, high)
+    const [middleFirst, middleLast] = _partitionDutchFlag(array, low, high, pivotIndex)
     quickSortDutchFlag(array, low, middleFirst - 1)
     quickSortDutchFlag(array, middleLast + 1, high)
   }
