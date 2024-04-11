@@ -39,7 +39,7 @@ class UnionFind {
 
   union(u, v) {
     if (u !== v) {
-      let uParent = this.find(u)＝
+      let uParent = this.find(u)
       let vParent = this.find(v)
       console.log('union uParent', uParent)
       this.root[uParent] = vParent

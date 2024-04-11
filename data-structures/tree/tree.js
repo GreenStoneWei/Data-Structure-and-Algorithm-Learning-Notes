@@ -62,10 +62,10 @@ function example1() {
   soda.add(gingerAle)
   soda.add(bitterLemon)
 
-  // beverage.traverseDepthFirst(console.log)
+  beverage.traverseDepthFirst(console.log)
   // beverage.traverselevelOrder(console.log)
-  const a = beverage.search('milk')
-  console.log(a)
+  // const a = beverage.search('milk')
+  // console.log(a)
 }
 
 example1()
